@@ -57,9 +57,10 @@ For installation of wazuh agents on various operating systems [Click Me]( https:
 
 > Note: For more information about the configuration refer to the Wazuh configuration file [here]( add link for wazuh config file)
 
-&nbsp;
+&nbsp; 
 
-# Squid Proxy Server [![Squid Proxy Server Logo](  )](https://wazuh.com/)
+
+# Squid Proxy Server [![Squid Proxy Server Logo]( http://www.squid-cache.org/Artwork/SN.png )]( http://www.squid-cache.org/ )
 Squid is a caching and forwarding HTTP web proxy. It has a wide variety of uses, including speeding up a web server by caching repeated requests, caching web, DNS and other computer network lookups.
 
 &nbsp;
