@@ -1,17 +1,24 @@
 # Adversary-Emulation-Plan
 
 - Introduction
--   Team Members
+-   Team Members: Adeel Fareed, Brian Fields, Harshal Shinde, Solomon Ruzima, Ugochukwu Egonu.
 -   Description of project
--   Purpose of the attack
+-     This project is intended to apply the MITRE ATT&CK framework and tools to map a cyber incident and then use the Caldera tool to complete an emulation plan. The attack chosen is a 2020 spear phishing campaign launched against Twitter, in which the credentials of many high profile users were compromised.
+-   Objectives of the attack
+-     To identify a real-world cybersecurity incident that we will make to the MITRE ATT&CK framework.
+-     To map a real-world incident to the MITRE ATT&CK framework. By mapping the attack to the MITRE ATT&CK framework, we will be able to understand the tactics, techniques, and procedures used by attackers in a specific incident.
+-     To use the information gathered in the mapping process to create an Adversary Emulation Plan using the Caldera tool that simulates the identified incident.
+-     To conduct an emulation of the incident using the created Adversary Emulation Plan in a mock-up scenario built in the cloud that accurately represents the system compromised in the incident. ​
+-     To create an incident report including a STIX2.1JSON representation using the information gathered in the incident mapping and emulation.​
 - Tools/Applications
 -     Caldera
 -       Attack emulation tool created by MITRE to simulate and map attacks using the ATT&CK framework.
 -     Wazuh
--       
+-       Open-source security platform that unifies XDR and SIEM protection for endpoints and cloud workloads.
 -     Squid
--       
+-       Squid is a caching and forwarding HTTP web proxy. It has a wide variety of uses, including speeding up a web server by caching repeated requests, caching web, DNS and other computer network lookups.
 -     Social Engineering Toolkit
+-       Open-source penetration testing framework designed for social engineering using a number of custom attack vectors.
 -     Web Domains w/ Email Accounts
 -       
 - Network Architecture Picture(s)
@@ -23,57 +30,57 @@
 
 -  Attackvpc
 -     Caldera-srv - description of the VM
--         OS - Debian
+-         OS: Debian
 -         Machine Type: e2-standard-2
 -         CPUs: 2 vCPU
 -         Memory: 8 GBs
 -     Caldera-client
--         OS
--         Machine Type
--         CPUs
--         Memory
+-         OS: Windows
+-         Machine Type: e2-medium
+-         CPUs: 1-2 vCPU (1 shared core)
+-         Memory: 4 GBs
 -     proxy-server
--         OS
--         Machine Type
--         CPUs
--         Memory
+-         OS: Debian
+-         Machine Type: e2-medium
+-         CPUs: 1-2 vCPU (1 shared core)
+-         Memory: 4 GBs
 -     socialengineeringtoolkit
--         OS
--         Machine Type
--         CPUs
--         Memory
+-         OS: Debian
+-         Machine Type: e2-medium
+-         CPUs: 1-2 vCPU (1 shared core)
+-         Memory: 4 GBs
 -  targetvpc
 -     usermachine1 - Machine that served as victim for this simulated attack
--         OS
--         Machine Type
--         CPUs
--         Memory
+-         OS: Windows
+-         Machine Type: e2-medium
+-         CPUs: 1-2 vCPU (1 shared core)
+-         Memory: 4 GBs
 -     linux-target - Alternate machine that lived on the same network; intended to demonstrate lateral movement after successful attack
--         OS
--         Machine Type
--         CPUs
--         Memory
+-         OS: Debian
+-         Machine Type: e2-medium
+-         CPUs: 1-2 vCPU (1 shared core)
+-         Memory: 4 GBs
 -     windowsinstance
--         OS
--         Machine Type
--         CPUs
--         Memory
+-         OS: Windows
+-         Machine Type: e2-medium
+-         CPUs: 1-2 vCPU (1 shared core)
+-         Memory: 4 GBs
 -     itadmin
--         OS
--         Machine Type
--         CPUs
--         Memory
+-         OS: Windows
+-         Machine Type: e2-medium
+-         CPUs: 1-2 vCPU (1 shared core)
+-         Memory: 4 GBs
 -     wazuh-siem
--         OS
--         Machine Type
--         CPUs
--         Memory
+-         OS: Ubuntu
+-         Machine Type: e2-medium
+-         CPUs: 1-2 vCPU (1 shared core)
+-         Memory: 4 GBs
 -  default
 -     emailserver - 
--         OS
--         Machine Type
--         CPUs
--         Memory
+-         OS: Windows
+-         Machine Type: e2-medium
+-         CPUs: 1-2 vCPU (1 shared core)
+-         Memory: 4 GBs
 
 Included .conf files:
 - Caldera
