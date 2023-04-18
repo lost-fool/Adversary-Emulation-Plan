@@ -1,8 +1,0 @@
-sudo apt update
-sudo DEBIAN_PRIORITY=low apt install postfix
-sudo postconf -e 'home_mailbox= Maildir/'
-sudo postconf -e 'virtual_alias_maps= hash:/etc/postfix/virtual'
-sudo nano /etc/postfix/virtual
-sudo postmap /etc/postfix/virtual
-sudo systemctl restart postfix
-sudo ufw allow Postfix
