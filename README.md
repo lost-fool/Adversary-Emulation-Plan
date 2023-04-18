@@ -10,7 +10,8 @@
 -     To use the information gathered in the mapping process to create an Adversary Emulation Plan using the Caldera tool that simulates the identified incident.
 -     To conduct an emulation of the incident using the created Adversary Emulation Plan in a mock-up scenario built in the cloud that accurately represents the system compromised in the incident. ​
 -     To create an incident report including a STIX2.1JSON representation using the information gathered in the incident mapping and emulation.​
-- Tools/Applications
+# Tools/Applications
+[![GCP Logo](https://skillicons.dev/icons?i=gcp&theme=light)](https://skillicons.dev)  [![Wazuh Logo]( https://github.com/wazuh/wazuh-packages/blob/4.3/stack/dashboard/base/files/etc/custom_welcome/Assets/Favicons/mstile-70x70.png?raw=true )](https://wazuh.com/)  [![Squid Proxy Server Logo]( http://www.squid-cache.org/Artwork/SN.png )]( http://www.squid-cache.org/ )
 -     Caldera
 -       Attack emulation tool created by MITRE to simulate and map attacks using the ATT&CK framework.
 -     Wazuh
