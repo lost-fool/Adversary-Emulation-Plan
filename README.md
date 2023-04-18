@@ -6,11 +6,14 @@
 -   Purpose of the attack
 - Tools/Applications
 -     Caldera
--       (what did this tool do?)
+-       Attack emulation tool created by MITRE to simulate and map attacks using the ATT&CK framework.
 -     Wazuh
+-       
 -     Squid
+-       
 -     Social Engineering Toolkit
 -     Web Domains w/ Email Accounts
+-       
 - Network Architecture Picture(s)
 -   <img width="591" alt="Screen Shot 2023-04-17 at 9 58 30 PM" src="https://user-images.githubusercontent.com/84095697/232651827-8dfe4dc1-98b7-4840-9022-4884f607e3bd.png">
 
@@ -20,49 +23,60 @@
 
 -  Attackvpc
 -     Caldera-srv - description of the VM
--         OS
--         CPUs
--         Memory
+-         OS - Debian
+-         Machine Type: e2-standard-2
+-         CPUs: 2 vCPU
+-         Memory: 8 GBs
 -     Caldera-client
 -         OS
+-         Machine Type
 -         CPUs
 -         Memory
 -     proxy-server
 -         OS
+-         Machine Type
 -         CPUs
 -         Memory
 -     socialengineeringtoolkit
 -         OS
+-         Machine Type
 -         CPUs
 -         Memory
 -  targetvpc
 -     usermachine1 - Machine that served as victim for this simulated attack
 -         OS
+-         Machine Type
 -         CPUs
 -         Memory
 -     linux-target - Alternate machine that lived on the same network; intended to demonstrate lateral movement after successful attack
 -         OS
+-         Machine Type
 -         CPUs
 -         Memory
 -     windowsinstance
 -         OS
+-         Machine Type
 -         CPUs
 -         Memory
 -     itadmin
 -         OS
+-         Machine Type
 -         CPUs
 -         Memory
 -     wazuh-siem
 -         OS
+-         Machine Type
 -         CPUs
 -         Memory
 -  default
 -     emailserver - 
 -         OS
+-         Machine Type
 -         CPUs
 -         Memory
 
 Included .conf files:
-- 
-
--Tools configuration info
+- Caldera
+- SEToolkit
+- Wazuh SIEM
+- Squid proxy
