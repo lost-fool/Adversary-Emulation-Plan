@@ -25,8 +25,8 @@ Try icons
 [![My Skills](https://skillicons.dev/icons?i=gcp&theme=light)](https://skillicons.dev)
 
 
-# Wazuh 
-[![Wazuh Logo]([https://github.com/wazuh/wazuh-packages/blob/4.3/stack/dashboard/base/files/etc/custom_welcome/Assets/Favicons/mstile-70x70.png](https://github.com/wazuh/wazuh-packages/blob/4.3/stack/dashboard/base/files/etc/custom_welcome/Assets/Favicons/mstile-70x70.png))](https://wazuh.com/)
+# Wazuh [![Wazuh Logo]( https://github.com/wazuh/wazuh-packages/blob/4.3/stack/dashboard/base/files/etc/custom_welcome/Assets/Favicons/favicon-32x32.png )](https://wazuh.com/)
+
 
 A unified system for safeguarding solutions such as XDR and SIEM that cater to endpoints and workloads.
 > We used it as a SIEM for our endpoints in Google Cloud Platform.
@@ -59,7 +59,7 @@ For installation of wazuh agents on various operating systems [Click Me]( https:
 
 &nbsp;
 
-# Squid Proxy Server
+# Squid Proxy Server [![Squid Proxy Server Logo](  )](https://wazuh.com/)
 Squid is a caching and forwarding HTTP web proxy. It has a wide variety of uses, including speeding up a web server by caching repeated requests, caching web, DNS and other computer network lookups.
 
 &nbsp;
@@ -76,7 +76,7 @@ To install Squid proxy server on an instance in Google Cloud Platform (GCP) foll
 As per the project\'s requirements following changes were adopted:
 
 ### Configure Linux Based Instances to Use the Squid Proxy Server
-- Edit \'environment\' file in etc either as a root user or using \'sudo\' as shown below:
+- Edit \'_environment_\' file in etc either as a root user or using \'sudo\' as shown below:
 
 ```
 nano /etc/environment
@@ -92,22 +92,22 @@ export no_proxy=169.254.169.254,metadata,metadata.google.internal
   source /etc/environment
   ```
   
-- Configure \'curl\' using a text editor of your choice using the below commands:
+- Configure \'_curl_\' using a text editor of your choice using the below commands:
 
   ```
   touch ~/.curlrc
   nano ~/.curlrc
   ```
-  - Edit and add the below line to the .curlrc file
+  - Edit and add the below line to the \'_.curlrc_\' file
   ```
   proxy=http://<squid-proxy-ip>:proxy-port/
   ```
   
-- Configure \'apt\' to use Squid proxy server using a text editor of your choice:
+- Configure \'_apt_\' to use Squid proxy server using a text editor of your choice:
   ```
   nano /etc/apt/apt.conf
   ```
-  - Add the below lines to the **apt.conf** file:
+  - Add the below lines to the *_apt.conf_* file:
     ```
     Acquire::http::Proxy "http://<squid-proxy-ip>:3128/";
     Acquire::https::Proxy "http://<squid-proxy-ip>:3128/";
@@ -115,7 +115,25 @@ export no_proxy=169.254.169.254,metadata,metadata.google.internal
     ```
 
 ### Configure Windows Based Instances to Use the Squid Proxy Server
-Follow the directions mentioned in the link [here]( https://www.anoopcnair.com/how-to-configure-proxy-settings-in-windows-11/ )
+Follow the steps mentioned in the link [here]( https://www.anoopcnair.com/how-to-configure-proxy-settings-in-windows-11/ )
 
+
+Add below section to the Network Architecture Section
+
+### proxy-server
+This instance served as a proxy server to all the instances in both _targetvpc_ and _attackvpc_
+  - OS: debian-11-bullseye-v20230206
+  - Machine Type: e2-medium
+  - CPUs: 1-2vCPU (1 shared core)
+  - Memory: 4GB
+  - Architecture: x86
+
+### wazuh-siem
+This instance served as a Security Information and Event Management (SIEM) tool for the instances in _targetvpc_. It acted as a centralized log collector.
+  - OS: ubuntu-1804-bionic-v20230215
+  - Machine Type: e2-medium
+  - CPUs: 1-2vCPU (1 shared core)
+  - Memory: 4GB
+  - Architecture: x86
 
 
