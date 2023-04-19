@@ -48,7 +48,7 @@
 
 # Network Architecture Description
 -   Firewall Rules
--     Should be in a separate config file (insert filename here)
+-     Should be in a separate config file (firewall-rules.json)
 
 - Attackvpc
 - Caldera-srv - This is the virtual machine in the attack vpc on which the caldera tool is installed and run. The server has two network interfaces one is internal and the other external.
