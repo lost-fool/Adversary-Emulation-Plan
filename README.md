@@ -51,7 +51,7 @@
 -         CPUs: 1-2 vCPU (1 shared core)
 -         Memory: 4 GBs
 -  targetvpc
--     usermachine1 - Machine that served as victim for this simulated attack
+-     usermachine1 - Machine that served as victim for this simulated attack. It was used to access solomon.ruzima@cy7900team3.com emails and open the phishing email.
 -         OS: Windows
 -         Machine Type: e2-medium
 -         CPUs: 1-2 vCPU (1 shared core)
