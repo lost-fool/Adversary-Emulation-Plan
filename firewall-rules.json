@@ -1,0 +1,718 @@
+[
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "3128"
+        ]
+      }
+    ],
+    "creationTimestamp": "2023-02-25T22:24:04.259-08:00",
+    "description": "Open TCP port 3128 in the targetvpc to allow access to the internal-VMs through the proxy server.",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "1260398687794185707",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "allow-access-to-targetvpc-vms-final",
+    "network": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/networks/targetvpc",
+    "priority": 1000,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/firewalls/allow-access-to-targetvpc-vms-final",
+    "sourceRanges": [
+      "0.0.0.0/0",
+      "10.128.0.0/24"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "3128"
+        ]
+      }
+    ],
+    "creationTimestamp": "2023-02-24T18:35:03.324-08:00",
+    "description": "Open TCP port 3128 in the attackvpc to allow access to the internal-VMs through the proxy server.",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "2115577713524002104",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "allow-access-to-vms",
+    "network": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/networks/attackvpc",
+    "priority": 1000,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/firewalls/allow-access-to-vms",
+    "sourceRanges": [
+      "0.0.0.0/0"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "icmp"
+      }
+    ],
+    "creationTimestamp": "2023-03-02T16:27:30.495-08:00",
+    "description": "allow ping in attackvpc",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "1944907030375202845",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "allow-ping-attackvpc",
+    "network": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/networks/attackvpc",
+    "priority": 1000,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/firewalls/allow-ping-attackvpc",
+    "sourceRanges": [
+      "0.0.0.0/0"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "icmp"
+      }
+    ],
+    "creationTimestamp": "2023-03-02T16:26:31.358-08:00",
+    "description": "allow pinging in targetvpc",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "2150099196020818008",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "allow-ping-targetvpc",
+    "network": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/networks/targetvpc",
+    "priority": 1000,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/firewalls/allow-ping-targetvpc",
+    "sourceRanges": [
+      "0.0.0.0/0"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "22"
+        ]
+      }
+    ],
+    "creationTimestamp": "2023-02-19T19:57:07.311-08:00",
+    "description": "",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "8799657444513894780",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "allow-ssh-from-iap",
+    "network": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/networks/attackvpc",
+    "priority": 1000,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/firewalls/allow-ssh-from-iap",
+    "sourceRanges": [
+      "35.235.240.0/20"
+    ],
+    "targetTags": [
+      "http-tag"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "8888"
+        ]
+      }
+    ],
+    "creationTimestamp": "2023-03-29T21:16:05.514-07:00",
+    "description": "",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "6963802733539800042",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "allowcalderaontargetvpc",
+    "network": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/networks/targetvpc",
+    "priority": 1000,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/firewalls/allowcalderaontargetvpc",
+    "sourceRanges": [
+      "0.0.0.0/0"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "25",
+          "143",
+          "465",
+          "587",
+          "993",
+          "2525"
+        ]
+      }
+    ],
+    "creationTimestamp": "2023-03-10T18:47:00.929-08:00",
+    "description": "",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "5493527534247499083",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "allowemaildefaultnet",
+    "network": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/networks/default",
+    "priority": 1000,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/firewalls/allowemaildefaultnet",
+    "sourceRanges": [
+      "0.0.0.0/0"
+    ],
+    "targetTags": [
+      "email-server"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "8888"
+        ]
+      }
+    ],
+    "creationTimestamp": "2023-02-19T20:56:56.758-08:00",
+    "description": "",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "4498571379190219639",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "allowhttp",
+    "network": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/networks/attackvpc",
+    "priority": 1000,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/firewalls/allowhttp",
+    "sourceRanges": [
+      "10.128.1.0/24"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "2525",
+          "143",
+          "465",
+          "587",
+          "993"
+        ]
+      }
+    ],
+    "creationTimestamp": "2023-02-22T23:01:44.605-08:00",
+    "description": "",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "7715009044986638775",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "allowmail",
+    "network": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/networks/targetvpc",
+    "priority": 1000,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/firewalls/allowmail",
+    "sourceRanges": [
+      "0.0.0.0/0"
+    ],
+    "targetTags": [
+      "mailserver"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "2525"
+        ]
+      }
+    ],
+    "creationTimestamp": "2023-02-26T15:01:39.083-08:00",
+    "description": "",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "4851354027173501500",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "allowsmtp",
+    "network": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/networks/default",
+    "priority": 1000,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/firewalls/allowsmtp",
+    "sourceRanges": [
+      "0.0.0.0/0"
+    ],
+    "targetTags": [
+      "smtp"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "22"
+        ]
+      }
+    ],
+    "creationTimestamp": "2023-02-18T13:46:40.312-08:00",
+    "description": "",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "1442147070807701935",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "allowssh",
+    "network": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/networks/myvpcnetwork",
+    "priority": 1000,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/firewalls/allowssh",
+    "sourceRanges": [
+      "0.0.0.0/0"
+    ],
+    "targetTags": [
+      "caldera-server"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "80",
+          "8888"
+        ]
+      }
+    ],
+    "creationTimestamp": "2023-03-02T16:44:52.854-08:00",
+    "description": "",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "8646654474408754667",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "attackvpc-allow-http",
+    "network": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/networks/attackvpc",
+    "priority": 1000,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/firewalls/attackvpc-allow-http",
+    "sourceRanges": [
+      "0.0.0.0/0"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "443"
+        ]
+      }
+    ],
+    "creationTimestamp": "2023-03-02T16:44:52.859-08:00",
+    "description": "",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "1468606092235570667",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "attackvpc-allow-https",
+    "network": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/networks/attackvpc",
+    "priority": 1000,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/firewalls/attackvpc-allow-https",
+    "sourceRanges": [
+      "0.0.0.0/0"
+    ],
+    "targetTags": [
+      "https-server"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "3389"
+        ]
+      }
+    ],
+    "creationTimestamp": "2023-02-19T16:39:19.281-08:00",
+    "description": "Allows RDP connections from any source to any instance on the network using port 3389.",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "8724945960119009240",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "attackvpc-allow-rdp",
+    "network": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/networks/attackvpc",
+    "priority": 65534,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/firewalls/attackvpc-allow-rdp",
+    "sourceRanges": [
+      "0.0.0.0/0"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "22"
+        ]
+      }
+    ],
+    "creationTimestamp": "2023-02-19T16:39:19.932-08:00",
+    "description": "Allows TCP connections from any source to any instance on the network using port 22.",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "5969190094263779288",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "attackvpc-allow-ssh",
+    "network": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/networks/attackvpc",
+    "priority": 65534,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/firewalls/attackvpc-allow-ssh",
+    "sourceRanges": [
+      "0.0.0.0/0"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "8888"
+        ]
+      }
+    ],
+    "creationTimestamp": "2023-02-10T14:09:49.434-08:00",
+    "description": "",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "6947090238448303682",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "default-allow-http",
+    "network": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/networks/default",
+    "priority": 1000,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/firewalls/default-allow-http",
+    "sourceRanges": [
+      "0.0.0.0/0"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "443"
+        ]
+      }
+    ],
+    "creationTimestamp": "2023-02-11T02:45:53.699-08:00",
+    "description": "",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "4671291981463998222",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "default-allow-https",
+    "network": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/networks/default",
+    "priority": 1000,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/firewalls/default-allow-https",
+    "sourceRanges": [
+      "0.0.0.0/0"
+    ],
+    "targetTags": [
+      "https-server"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "icmp"
+      }
+    ],
+    "creationTimestamp": "2023-02-10T11:28:34.400-08:00",
+    "description": "Allow ICMP from anywhere",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "765613069405201421",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "default-allow-icmp",
+    "network": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/networks/default",
+    "priority": 65534,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/firewalls/default-allow-icmp",
+    "sourceRanges": [
+      "0.0.0.0/0"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "0-65535"
+        ]
+      },
+      {
+        "IPProtocol": "udp",
+        "ports": [
+          "0-65535"
+        ]
+      },
+      {
+        "IPProtocol": "icmp"
+      }
+    ],
+    "creationTimestamp": "2023-02-10T11:28:34.214-08:00",
+    "description": "Allow internal traffic on the default network",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "5016937123946374157",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "default-allow-internal",
+    "network": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/networks/default",
+    "priority": 65534,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/firewalls/default-allow-internal",
+    "sourceRanges": [
+      "10.128.0.0/9"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "3389"
+        ]
+      }
+    ],
+    "creationTimestamp": "2023-02-10T11:28:34.338-08:00",
+    "description": "Allow RDP from anywhere",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "4921303380678878221",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "default-allow-rdp",
+    "network": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/networks/default",
+    "priority": 65534,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/firewalls/default-allow-rdp",
+    "sourceRanges": [
+      "0.0.0.0/0"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "22"
+        ]
+      }
+    ],
+    "creationTimestamp": "2023-02-10T11:28:34.276-08:00",
+    "description": "Allow SSH from anywhere",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "9110926540636103693",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "default-allow-ssh",
+    "network": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/networks/default",
+    "priority": 65534,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/firewalls/default-allow-ssh",
+    "sourceRanges": [
+      "0.0.0.0/0"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "80",
+          "8888"
+        ]
+      }
+    ],
+    "creationTimestamp": "2023-02-26T11:25:54.864-08:00",
+    "description": "",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "2130513200302918829",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "targetvpc-allow-http",
+    "network": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/networks/targetvpc",
+    "priority": 1000,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/firewalls/targetvpc-allow-http",
+    "sourceRanges": [
+      "0.0.0.0/0"
+    ],
+    "targetTags": [
+      "http-server"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "443"
+        ]
+      }
+    ],
+    "creationTimestamp": "2023-02-19T17:04:28.120-08:00",
+    "description": "",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "5898169803547310579",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "targetvpc-allow-https",
+    "network": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/networks/targetvpc",
+    "priority": 1000,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/firewalls/targetvpc-allow-https",
+    "sourceRanges": [
+      "0.0.0.0/0"
+    ],
+    "targetTags": [
+      "https-server"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "3389"
+        ]
+      }
+    ],
+    "creationTimestamp": "2023-02-19T16:37:15.156-08:00",
+    "description": "Allows RDP connections from any source to any instance on the network using port 3389.",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "5122339388077866580",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "targetvpc-allow-rdp",
+    "network": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/networks/targetvpc",
+    "priority": 65534,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/firewalls/targetvpc-allow-rdp",
+    "sourceRanges": [
+      "0.0.0.0/0"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "22"
+        ]
+      }
+    ],
+    "creationTimestamp": "2023-02-19T16:37:15.653-08:00",
+    "description": "Allows TCP connections from any source to any instance on the network using port 22.",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "5372463053442874964",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "targetvpc-allow-ssh",
+    "network": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/networks/targetvpc",
+    "priority": 65534,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/firewalls/targetvpc-allow-ssh",
+    "sourceRanges": [
+      "0.0.0.0/0"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "1514",
+          "1515"
+        ]
+      }
+    ],
+    "creationTimestamp": "2023-02-25T20:07:45.956-08:00",
+    "description": "Open TCP port 1514 to allow agent talk to wazuh server.",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "8355127311470126590",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "wazuh-agent-connection",
+    "network": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/networks/targetvpc",
+    "priority": 1000,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/cy7900-team3/global/firewalls/wazuh-agent-connection",
+    "sourceRanges": [
+      "0.0.0.0/0"
+    ]
+  }
+]
