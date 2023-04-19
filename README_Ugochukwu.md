@@ -10,9 +10,9 @@ The Social Engineering Toolkit is an open-source penetration testing framework d
  # Installation
 Installing the Social Engineering Toolkit is a pretty straightforward process with most operating systems. On most Linux distros the manual installation can be performed by using the following commands
 
-   *git clone https://github.com/trustedsec/social-engineer-toolkit/ set/
-   *cd set
-   *pip install -r requirements.txt
+     * git clone https://github.com/trustedsec/social-engineer-toolkit/ set/
+     * cd set
+     * pip install -r requirements.txt
 
 # Specifications
 Below are the specifications of the system used for the installation of the SET
