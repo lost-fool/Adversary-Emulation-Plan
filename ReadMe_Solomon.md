@@ -7,7 +7,7 @@
   
   
   -Caldera-srv 
-    This is the virtual machine in the attack vpc on which the caldera tool is installed and run.
+    This is the virtual machine in the attack vpc on which the caldera tool is installed and run. The server has two network interfaces one is internal and the other external.
     Specifications
     OS: Debian Linux
     Machine Type: e2-standard-2
@@ -15,7 +15,7 @@
     Memory: 8 GBs
     
  -Caldera-client
- -This is the virtual machine in the attack vpc that is used to access the caldera services. 
+ -This is the virtual machine in the attack vpc that is used to access the caldera services. The caldera tool GUI is accessed via the web.
   OS: Windows server 2022
   Machine Type: e2-medium
   CPUs: 1-2 vCPU (1 shared core)
@@ -24,4 +24,6 @@
 Caldera Resources used
 * https://github.com/mitre/caldera
 * https://caldera.readthedocs.io/en/latest/
-* 
+* https://www.youtube.com/watch?v=EIHLXWnK1Dw
+
+
