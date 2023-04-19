@@ -27,7 +27,7 @@ Web Domains w/ Email Accounts
   - Three email addresses were added to the domains solomon.ruzima@cy7900team3.com, brian.fields@cy7900team3.com and brianfields@cy79ooteam3.com.
 
 
-itadmin
+# itadmin
 This is the windows virtual machine which belongs to the IT Manager. In this machine is where brian.fields@cy7900team3.com email is accessed. And from this machine is where the legitimate email from IT manager was sent to the new user whose email is solomon.ruzima@cy7900team3.com
 Specifications
   * OS: Windows server 2022
