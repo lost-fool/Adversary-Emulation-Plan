@@ -1,30 +1,3 @@
-# Wazuh
-> Hello guys!
-```
-git init
-git run
-```
-Try colors `#ffffff`
-
-try links
-[Github](https://pages.github.com/)
-
-Try List
-- List1
-* List2
-+ List3
-
-Try Emoji 
-:smiley:
-
-Try foot notes
-1st footnote[^1].
-[^1]: Voila!
-
-Try icons
-[![My Skills](https://skillicons.dev/icons?i=gcp&theme=light)](https://skillicons.dev)
-
-
 # Wazuh [![Wazuh Logo]( https://github.com/wazuh/wazuh-packages/blob/4.3/stack/dashboard/base/files/etc/custom_welcome/Assets/Favicons/favicon-32x32.png )](https://wazuh.com/)
 
 
