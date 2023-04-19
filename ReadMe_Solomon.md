@@ -1,7 +1,7 @@
 # Caldera 
   - Caldera refers to an open-source framework used for automated adversary emulation, which is also commonly known as Red Teaming or Penetration Testing. This tool is designed to enable users to simulate real-world attacks, test the security defenses of a network or system, and provide a detailed report of the results.
     
-  -Caldera-srv 
+  Caldera-srv 
     This is the virtual machine in the attack vpc on which the caldera tool is installed and run. The server has two network interfaces one is internal and the other external.
    * Specifications
    * OS: Debian Linux
@@ -9,8 +9,8 @@
    * CPUs: 2 vCPU
    * Memory: 8 GBs
     
- -Caldera-client
- -This is the virtual machine in the attack vpc that is used to access the caldera services. The caldera tool GUI is accessed via the web.
+ Caldera-client
+  This is the virtual machine in the attack vpc that is used to access the caldera services. The caldera tool GUI is accessed via the web.
   * OS: Windows server 2022
   * Machine Type: e2-medium
   * CPUs: 1-2 vCPU (1 shared core)
@@ -21,6 +21,6 @@ Caldera Resources used
 * https://caldera.readthedocs.io/en/latest/
 * https://www.youtube.com/watch?v=EIHLXWnK1Dw
 
--Web Domains w/ Email Accounts
+Web Domains w/ Email Accounts
   - Two domains were registered on godaddy one being cy7900team.com and another being cy79ooteam3.com.
   - Three email addresses were added to the domains solomon.ruzima@cy7900team3.com, brian.fields@cy7900team3.com and brianfields@cy79ooteam3.com.
