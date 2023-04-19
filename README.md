@@ -88,3 +88,4 @@ Included .conf files:
 - SEToolkit
 - Wazuh SIEM
 - Squid proxy
+-caldera agent configuratin script
