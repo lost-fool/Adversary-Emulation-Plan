@@ -34,3 +34,11 @@ Specifications
   * Machine Type: e2-medium
   * CPUs: 1-2 vCPU (1 shared core)
   * Memory: 4 GBs
+
+# emailserver
+This is a the vartual machine which was used to access brian.fields@cy79ooteam3.com email. From this machine iw where the phishing email was sent. It it important to note that it was set in the default vpc so that there is no way it can be tracked back to attack vpc since domains and emails leave trails of location of access.
+Specifications
+  * OS: Windows server 2022
+  * Machine Type: e2-medium
+  * CPUs: 1-2 vCPU (1 shared core)
+  * Memory: 4 GBs
