@@ -3,7 +3,7 @@
 
 -Web Domains w/ Email Accounts
   - Two domains were registered on godaddy one being cy7900team.com and another being cy79ooteam3.com.
-  - Three email addresses were added to the domains solomon.ruzima@cy7900team3.com, brian.fields@cy7900team3.co and brianfields@cy79ooteam3.com.
+  - Three email addresses were added to the domains solomon.ruzima@cy7900team3.com, brian.fields@cy7900team3.com and brianfields@cy79ooteam3.com.
   
   
   -Caldera-srv 
@@ -21,4 +21,10 @@
   CPUs: 1-2 vCPU (1 shared core)
   Memory: 4 GBs
   
-  
+Caldera Installation Guide
+  ```
+git clone https://github.com/mitre/caldera.git --recursive
+cd caldera
+pip3 install -r requirements.txt
+python3 server.py --insecure
+```
