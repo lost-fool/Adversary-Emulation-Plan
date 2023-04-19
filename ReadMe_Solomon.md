@@ -21,10 +21,7 @@
   CPUs: 1-2 vCPU (1 shared core)
   Memory: 4 GBs
   
-Caldera Installation Guide
-  ```
-git clone https://github.com/mitre/caldera.git --recursive
-cd caldera
-pip3 install -r requirements.txt
-python3 server.py --insecure
-```
+Caldera Resources used
+* https://github.com/mitre/caldera
+* https://caldera.readthedocs.io/en/latest/
+* 
